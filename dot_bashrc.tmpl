@@ -17,6 +17,8 @@ fi
 export PS1="\[\033[1;34m\][\t] \[\033[0;32m\]\u@\h\[\033[0;36m\]:\[\033[0;33m\]\w\[\033[0;35m\]\$(__git_ps1 ' (%s)')\[\033[0m\]\$ "
 
 # local aliases
+{{ if eq .location "home" -}}
 alias cdr='cd /c/briiiqtt/repo/01-in-Progress'
 alias cdappdata='cd /c/Users/hihi/Appdata'
 alias nconf='cd /c/Users/hihi/AppData/Local/nvim'
+{{ end -}}
