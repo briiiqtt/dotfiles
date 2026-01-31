@@ -17,7 +17,9 @@ config.font_size = 11.0
 
 return config
 ```
-- 변경사항 적용: `chezmoi apply`
+- 로컬 변경사항 적용: `chezmoi apply`
+- 원격 변경사항 적용: `chezmoi update` (`git pull`+`chezmoi apply`)
+- 변경사항 푸시: `chezmoid cd` 후 git 명령
 
 ## 다른 컴퓨터에서 세팅
 ### 1. chezmoi 설치 및 동기화
