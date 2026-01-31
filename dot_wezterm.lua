@@ -9,7 +9,7 @@ config.front_end = "WebGpu"
 -- layout and desgin
 config.window_decorations = "RESIZE"
 config.initial_rows = 30
-config.initial_cols = 150
+config.initial_cols = 120
 config.color_scheme = 'Tokyo Night'
 config.window_background_opacity = 0.95
 config.window_padding = { left = 0, top = 0 }
