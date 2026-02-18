@@ -11,7 +11,7 @@ config.window_decorations = "RESIZE"
 config.initial_rows = 30
 config.initial_cols = 120
 config.color_scheme = 'Tokyo Night'
-config.window_background_opacity = 0.95
+config.window_background_opacity = 1-- 0.95
 config.window_padding = { left = 0, top = 0 }
 config.inactive_pane_hsb = { saturation = 0.9, brightness = 0.6 } -- emphasize active pane
 
@@ -30,13 +30,13 @@ config.font = wezterm.font_with_fallback {
 
 -- key bindings
 config.keys = {
-    {key="w", mods="CTRL", action=wezterm.action.CloseCurrentPane{confirm=false}},
-    {key="t", mods="CTRL", action=wezterm.action.SpawnTab("DefaultDomain")},
+--    {key="w", mods="CTRL", action=wezterm.action.CloseCurrentPane{confirm=false}},
+--    {key="t", mods="CTRL", action=wezterm.action.SpawnTab("DefaultDomain")},
 --    {key="h", mods="CTRL|SHIFT", action=wezterm.action.ActivateTabRelative(-1)},
 --    {key="l", mods="CTRL|SHIFT", action=wezterm.action.ActivateTabRelative(1)},
     
     {key="Backspace", mods="CTRL", action=wezterm.action.SendString("\x17")},
-    {key = "\\", mods = "CTRL", action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" },},
+--    {key = "\\", mods = "CTRL", action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" },},
 }
 -- move tab by ctrl + 1~9
 for i = 1, 9 do
