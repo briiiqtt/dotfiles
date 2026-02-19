@@ -1,1 +1,6 @@
+source ~/.vimrc
+
 set clipboard+=unnamed
+
+set surround
+set handler=ide
