@@ -2,9 +2,11 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 -- system settings
-config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
-config.default_cwd = "C:\\"
+config.default_prog = { [[C:\Users\hihi\scoop\apps\git\current\bin\bash.exe]], "--login", "-i" }
+config.default_cwd = [[C:\]] 
 config.front_end = "WebGpu"
+
+--
 
 -- layout and desgin
 config.window_decorations = "RESIZE"

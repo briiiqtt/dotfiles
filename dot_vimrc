@@ -1,3 +1,4 @@
+set encoding=utf-8
 set novisualbell
 set visualbell t_vb=
 set noerrorbells
@@ -6,3 +7,5 @@ set ignorecase
 set smartcase
 
 set number
+
+set clipboard+=unnamedplus
